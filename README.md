@@ -15,16 +15,14 @@ Production Managers, Factory Operators, Customers.
 # 3. What is the current manual or traditional process?
 Current practices includes:
 
-
 1. Reactive Maintenance- Machines repaired only if they are fails.
-2.   Schedule Maintenance- Maintenance are scheduled on fixed intervals.
+2. Schedule Maintenance- Maintenance are scheduled on fixed intervals.
 
 # 4. What are the limitations of the current process?
 Limitations of the current process are as follows:
 
-
-1.   Unexpected machine failures.
-2.   High maintenance cost.
+1. Unexpected machine failures.
+2. High maintenance cost.
 3. Production delays.
 4. Human errors.
 
@@ -34,10 +32,11 @@ AI Task Type: Image classification
 
 Image Classification used for:
 
-Quality inspection
-Defect detection
-Product verification
-Surface damage checking
+1. Quality inspection
+2. Defect detection
+3. Product verification
+4. Surface damage checking
+
 Manufacturing based industry faces problem in manually detecting defective products. An AI based image classification system can automatically classify products as defective or non-defective using product images.
 
 # **Task 4 Data Requirement Plan**
@@ -62,10 +61,10 @@ Data can be collected using existing industrial dataset, industrial cameras inst
 6. Data quality risks:
 Qualty risks which can affect model performance are:
 
-Poor image quality
-Imbalanced dataset
-Lighting Variations
-Noise and Background Issues
+1. Poor image quality
+2. Imbalanced dataset
+3. Lighting Variations
+4. Noise and Background Issues
 
 # **Task 5 Model Recommendation**
 
@@ -79,20 +78,22 @@ CNNs are specifically designed for image processing and computer vision tasks.
 
 The solution will be evaluated on:
 
-Technical metrics- Technical metrics measure how accurately the AI model classifies defective and non-defective products.
+1. Technical metrics- Technical metrics measure how accurately the AI model classifies defective and non-defective products.
 
-Accuracy- Measures the percentage of correctly classified product images
-Precision- Measures how many actual defective products are correctly identified.
-F1-Score- Balances precision and recall.
-Confusion Matrix- It helps understand model prediction errors.
-Business Metrics- Business metrics measure the practical impact of the AI solution in manufacturing operations.
+* Accuracy- Measures the percentage of correctly classified product images
+* Precision- Measures how many actual defective products are correctly identified.
+* F1-Score- Balances precision and recall.
+* Confusion Matrix- It helps understand model prediction errors.
 
-Possible Failure Cases:
+2. Business Metrics- Business metrics measure the practical impact of the AI solution in manufacturing operations.
 
-Poor Image Quality
-Incorrect Labeling
-Similar-Looking Defects
-Human review or validation process- Human experts will be involved to validate model predictions and improve reliability.
+3. Possible Failure Cases:
+
+* Poor Image Quality
+* Incorrect Labeling
+* Similar-Looking Defects
+
+4. Human review or validation process- Human experts will be involved to validate model predictions and improve reliability.
 
 Validation process:
 
@@ -103,21 +104,23 @@ Correct labels are added to the dataset.
 
 Write about possible risks such as:
 
-Bias in Data- Bias can occur if the training dataset does not represent all types of products and defects equally. Example- model may perform well on common defects but fail to detect rare defects.
+1. Bias in Data- Bias can occur if the training dataset does not represent all types of products and defects equally. Example- model may perform well on common defects but fail to detect rare defects.
 
-Incorrect Predictions- The AI system may incorrectly classify products. Types of Errors:
+2. Incorrect Predictions- The AI system may incorrectly classify products. Types of Errors:
 
-False Positive: A good product is classified as defective.
-False Negative: A defective product is classified as non-defective.
-Privacy Concerns- Although manufacturing image datasets usually do not contain personal information, privacy concerns may still arise if:
+* False Positive: A good product is classified as defective.
+* False Negative: A defective product is classified as non-defective.
 
-Employee information appears in images
-Factory operations are recorded without authorization
-Over-Reliance on AI- Workers may depend completely on AI predictions and ignore manual inspection. This can become dangerous if the model makes errors or encounters new defect types.
+3. Privacy Concerns- Although manufacturing image datasets usually do not contain personal information, privacy concerns may still arise if:
 
-Impact on Users- AI automation may affect workers involved in manual inspection tasks. Example- fear of job replacement, need for new technical skills.
+* Employee information appears in images
+* Factory operations are recorded without authorization
 
-Need for Human Oversight- Human supervision is important to ensure the AI system works reliably and ethically. Example- review uncertain predictions, validate defective product classifications
+4. Over-Reliance on AI- Workers may depend completely on AI predictions and ignore manual inspection. This can become dangerous if the model makes errors or encounters new defect types.
+
+5. Impact on Users- AI automation may affect workers involved in manual inspection tasks. Example- fear of job replacement, need for new technical skills.
+
+6. Need for Human Oversight- Human supervision is important to ensure the AI system works reliably and ethically. Example- review uncertain predictions, validate defective product classifications
 
 # **Task 8 Final Solution Summary**
 
@@ -138,10 +141,11 @@ Data Type: Unstructured Labels: Defective and Non-defective Data Collection Meth
 
 5. Expected Business Impact- The AI solution can provide several business benefits:
 
-Improved product quality
-Faster inspection process
-Reduced product return rates
-Risks and Mitigation Plan-
+* Improved product quality
+* Faster inspection process
+* Reduced product return rates
+
+6. Risks and Mitigation Plan-
 
 Risk:
 
@@ -150,7 +154,7 @@ Risk:
 * Poor image quality
 * Over-reliance on AI
 
-  Mitigation Plan
+Mitigation Plan:
 
 * Use diverse and balanced datasets
 * Regularly retrain and monitor the model
